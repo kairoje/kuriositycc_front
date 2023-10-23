@@ -7,12 +7,16 @@ import { HttpClientModule } from '@angular/common/http';
 import { ApiService } from './api.service';
 import { RegistrationComponent } from './registration/registration.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HomeComponent } from './home/home.component';
+import { NavComponent } from './nav/nav.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    RegistrationComponent
+    RegistrationComponent,
+    HomeComponent,
+    NavComponent
   ],
   imports: [
     BrowserModule,
