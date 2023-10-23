@@ -12,5 +12,6 @@
       <input type="password" id="password" formControlName="password" required>
     </div>
     <button type="submit" [disabled]="registrationForm.invalid">Register</button>
+    <div class="success-message" *ngIf="successMessage">{{ successMessage }}</div>
   </form>
   
