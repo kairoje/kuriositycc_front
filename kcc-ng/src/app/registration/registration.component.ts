@@ -29,7 +29,7 @@ export class RegistrationComponent implements OnInit {
       this.apiService.registerUser(registrationData).subscribe(
         (response) => {
           this.successMessage = 'Registration Sucessful!'
-          this.router.navigate(['']);
+          this.router.navigate(['/']);
         },
         (error) => {
           // Handle errors (e.g., display an error message)
