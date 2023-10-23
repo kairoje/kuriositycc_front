@@ -17,5 +17,10 @@ export class ApiService {
     const registrationEndpoint = `${this.apiUrl}/api/auth/register`;
     return this.http.post(registrationEndpoint, userData);
   }
+
+  loginUser(userData: any) {
+    const loginEndpoint = `${this.apiUrl}/api/auth/login`;
+    return this.http.post(loginEndpoint, userData);
+  }
 }
 
