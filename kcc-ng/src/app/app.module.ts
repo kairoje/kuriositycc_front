@@ -14,6 +14,7 @@ import { ShopComponent } from './shop/shop.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
 import { CarouselComponent } from './carousel/carousel.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { CarouselComponent } from './carousel/carousel.component';
     ReactiveFormsModule,
     RouterModule,
     BrowserAnimationsModule,
-    MatCardModule
+    MatCardModule,
+    NgbModule
   ],
   providers: [ApiService],
   bootstrap: [AppComponent]
