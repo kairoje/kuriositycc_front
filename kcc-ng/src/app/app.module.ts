@@ -10,6 +10,9 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
 import { NavComponent } from './nav/nav.component';
 import { LoginComponent } from './login/login.component';
+import { ShopComponent } from './shop/shop.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatCardModule } from '@angular/material/card';
 
 
 @NgModule({
@@ -18,14 +21,17 @@ import { LoginComponent } from './login/login.component';
     RegistrationComponent,
     HomeComponent,
     NavComponent,
-    LoginComponent
+    LoginComponent,
+    ShopComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
-    RouterModule
+    RouterModule,
+    BrowserAnimationsModule,
+    MatCardModule
   ],
   providers: [ApiService],
   bootstrap: [AppComponent]

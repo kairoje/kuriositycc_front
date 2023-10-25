@@ -22,5 +22,9 @@ export class ApiService {
     const loginEndpoint = `${this.apiUrl}/api/auth/login`;
     return this.http.post(loginEndpoint, userData);
   }
+
+  getProducts() {
+    return this.http.get(`${this.apiUrl}/api/products`);
+  }
 }
 
