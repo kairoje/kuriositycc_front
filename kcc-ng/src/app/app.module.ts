@@ -13,6 +13,7 @@ import { LoginComponent } from './login/login.component';
 import { ShopComponent } from './shop/shop.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
+import { CarouselComponent } from './carousel/carousel.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { MatCardModule } from '@angular/material/card';
     HomeComponent,
     NavComponent,
     LoginComponent,
-    ShopComponent
+    ShopComponent,
+    CarouselComponent
   ],
   imports: [
     BrowserModule,
