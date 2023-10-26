@@ -2,3 +2,7 @@
     text-align: center;
     padding: 50px;
 }
+
+#bio p {
+    white-space: pre-line;
+}
