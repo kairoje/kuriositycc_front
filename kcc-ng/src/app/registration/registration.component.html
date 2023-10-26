@@ -1,5 +1,5 @@
-<h2>Sign Up Below to Join the Team!</h2>
-
+<div class="container">
+  <h2>Welcome to the team!</h2>  
 <div class="form-container">
    <form [formGroup]="registrationForm" (ngSubmit)="onSubmit()">
     <div class="data-entry">
@@ -24,11 +24,9 @@
             <input type="password" id="password" formControlName="password" required>
         </div>
 
-        <button type="submit" [disabled]="registrationForm.invalid">Register</button>
-        <div class="success-message" *ngIf="successMessage">{{ successMessage }}</div>
-         
+            <button type="submit" [disabled]="registrationForm.invalid">Register</button>
+            <div class="success-message" *ngIf="successMessage">{{ successMessage }}</div>  
+        </div>
+        </form> 
     </div>
-  </form> 
 </div>
-
-  
