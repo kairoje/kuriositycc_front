@@ -5,22 +5,24 @@ import { ApiService } from '../api.service';
 @Component({
   selector: 'app-product-detail',
   templateUrl: './product-detail.component.html',
-  styleUrls: ['./product-detail.component.css']
+  styleUrls: ['./product-detail.component.css'],
 })
 export class ProductDetailComponent implements OnInit {
-  productId!: any;
+  product: any;
 
   constructor(private route: ActivatedRoute, private apiService: ApiService) {}
 
   ngOnInit(): void {
-    this.apiService.getProductById(this.productId).subscribe(
-      (data: any) => {
-        this.productId = data;
-      },
-      (error: any) => {
-        console.error('Error fetching product:', error);
-      }
-    );
+    this.route.params.subscribe((params) => {
+      const productId = params['id'];
+      this.apiService.getProductById(productId).subscribe(
+        (data: any) => {
+          this.product = data;
+        },
+        (error: any) => {
+          console.error('Error fetching product details:', error);
+        }
+      );
+    });
   }
 }
-

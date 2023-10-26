@@ -1,10 +1,16 @@
-<div id="product-container">
-    <ng-container *ngIf="productId">
-      <img src="{{ productId.image }}" alt="">
-    </ng-container>
+<div class="product-detail">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>{{ product.name }}</mat-card-title>
+      </mat-card-header>
+      <img mat-card-image src="{{ product.image }}" alt="{{ product?.name }}">
+      <mat-card-content>
+        <p>Price: ${{ product.price }}</p>
+      </mat-card-content>
+      <mat-card-content>
+        <p>{{ product.description }}</p>
+      </mat-card-content>
+    </mat-card>
   </div>
-  
-  
-<p>working</p>
   
 

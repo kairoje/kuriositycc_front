@@ -27,8 +27,9 @@ export class ApiService {
     return this.http.get(`${this.apiUrl}/api/products`);
   }
 
-  getProductById(product: any) {
-    return this.http.get(`${this.apiUrl}/api/products/{productId}`);
+  getProductById(productId: any) {
+    return this.http.get(`${this.apiUrl}/api/products/${productId}`);
   }
+  
 }
 
