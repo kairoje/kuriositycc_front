@@ -14,7 +14,8 @@ import { ShopComponent } from './shop/shop.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
 import { CarouselComponent } from './carousel/carousel.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule, NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     NavComponent,
     LoginComponent,
     ShopComponent,
-    CarouselComponent
+    CarouselComponent,
+    ProductDetailComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +37,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     RouterModule,
     BrowserAnimationsModule,
     MatCardModule,
-    NgbModule
+    NgbModule,
+    NgbCarouselModule
   ],
   providers: [ApiService],
   bootstrap: [AppComponent]

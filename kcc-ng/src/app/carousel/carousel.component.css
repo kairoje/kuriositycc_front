@@ -1,0 +1,8 @@
+.carousel-image {
+  max-width: 100%; 
+  height: auto;
+}
+
+.carousel-container {
+  padding-bottom: 10px;
+}
