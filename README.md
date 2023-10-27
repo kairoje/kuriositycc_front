@@ -59,3 +59,15 @@ Here's how I approached this project:
 5. Designed and implemented the homepage and shop pages.
 6. Implemented the order history feature.
 7. Currently in development mode, planning to add more features and enhancements as my skills as an engineer grow.
+
+Acknowledgments
+Special thanks to Angular and Angular Material for making this project possible.
+
+Special thanks to our amazing instructors!!
+
+Suresh Sigera: GitHub
+Dhrubo Chowdhury: GitHub
+Leonardo Rodriguez: GitHub
+
+Back end api:
+https://github.com/kairoje/kuriositycc_back
