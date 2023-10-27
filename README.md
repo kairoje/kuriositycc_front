@@ -64,9 +64,9 @@ I faced some challenges during the development of this project:
 Special thanks to Angular and Angular Material for making this project possible.
 
 Special thanks to our amazing instructors!!
-- Suresh Sigera: GitHub
-- Dhrubo Chowdhury: GitHub
-- Leonardo Rodriguez: GitHub
+- Suresh Sigera
+- Dhrubo Chowdhury
+- Leonardo Rodriguez
 
 Back end api:
 https://github.com/kairoje/kuriositycc_back
