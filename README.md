@@ -39,3 +39,13 @@ Kuriosity Clothing Co. is an apparel brand dedicated to kindling a sense of wond
 - HTML/CSS
 - RESTful API for backend integration
 - Bootstrap
+
+## Hurdles
+
+I faced some challenges during the development of this project:
+
+- Integrating the frontend with the backend API, especially after implementing Spring Security.
+- Struggling with CSS to achieve the desired responsiveness.
+- Balancing the development between the front-end and back-end.
+
+
