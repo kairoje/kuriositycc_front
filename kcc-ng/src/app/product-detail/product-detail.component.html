@@ -1,0 +1,19 @@
+<div class="product-detail" style="display: flex; justify-content: center; align-items: flex-start; height: 100vh;">
+    <mat-card style="width: 500px;">
+      <mat-card-header>
+        <mat-card-title>{{ product.name }}</mat-card-title>
+      </mat-card-header>
+      <img mat-card-image src="{{ product.image }}" alt="{{ product?.name }}">
+      <mat-card-content>
+        <p>Price: ${{ product.price }}</p>
+      </mat-card-content>
+      <mat-card-content>
+        <p>{{ product.description }}</p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-raised-button color="primary" (click)="buyProduct()">Buy Product</button>
+    </mat-card-actions>
+    </mat-card>
+  </div>
+
+  

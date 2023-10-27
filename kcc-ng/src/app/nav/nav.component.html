@@ -1,0 +1,19 @@
+<header>
+    <a href="/" class="logo"><img src="assets/kcc_logo_nobkgrnd.png" alt="Kuriosity Clothing Co Logo"></a>
+    <ul>
+        <li><a routerLink="/">Home</a></li>
+        <li><a routerLink="/shop">Shop</a></li>
+        <li><a routerLink="/login">Login</a></li>
+        <li><a routerLink="/register">Register</a></li>
+        <div *ngIf="isAuthenticated" ngbDropdown class="dropdown">
+            <button class="dropbtn" ngbDropdownToggle>Profile</button>
+            <div ngbDropdownMenu>
+                <!-- Add additional dropdown options if needed -->
+                <a routerLink="/profile" class="dropdown-item">My Profile</a>
+                <a class="dropdown-item" (click)="logout()">Logout</a>
+            </div>
+        </div>
+    </ul>
+</header>
+
+
