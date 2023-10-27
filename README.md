@@ -31,3 +31,11 @@ Kuriosity Clothing Co. is an apparel brand dedicated to kindling a sense of wond
 - As a user, I want to see my order history with order details.
 - As a user, I want the option to change my password.
 
+## Tools Used
+
+- Angular
+- Angular Material
+- TypeScript
+- HTML/CSS
+- RESTful API for backend integration
+- Bootstrap
