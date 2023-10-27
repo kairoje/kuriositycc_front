@@ -48,4 +48,14 @@ I faced some challenges during the development of this project:
 - Struggling with CSS to achieve the desired responsiveness.
 - Balancing the development between the front-end and back-end.
 
+## Project Planning
 
+Here's how I approached this project:
+
+1. Started with the backend development, focusing on implementing Spring Security for user authentication and authorization.
+2. Created the user registration and login features on the backend.
+3. Began working on the Angular frontend, starting with user login and registration.
+4. Developed the shopping cart and checkout functionality.
+5. Designed and implemented the homepage and shop pages.
+6. Implemented the order history feature.
+7. Currently in development mode, planning to add more features and enhancements as my skills as an engineer grow.
