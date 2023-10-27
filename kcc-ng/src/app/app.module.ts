@@ -17,6 +17,8 @@ import { CarouselComponent } from './carousel/carousel.component';
 import { NgbModule, NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { OrderComponent } from './order/order.component';
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+import { TooltipModule } from 'ngx-bootstrap/tooltip';
 
 
 @NgModule({
@@ -40,7 +42,9 @@ import { OrderComponent } from './order/order.component';
     BrowserAnimationsModule,
     MatCardModule,
     NgbModule,
-    NgbCarouselModule
+    NgbCarouselModule,
+    BsDropdownModule.forRoot(),
+    TooltipModule.forRoot()
   ],
   providers: [ApiService],
   bootstrap: [AppComponent]

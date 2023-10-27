@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { ApiService } from '../api.service';
-
 
 @Component({
   selector: 'app-product-detail',
@@ -11,9 +10,7 @@ import { ApiService } from '../api.service';
 export class ProductDetailComponent implements OnInit {
   product: any;
 
-
-  constructor(private route: ActivatedRoute, private apiService: ApiService) {}
-
+  constructor(private route: ActivatedRoute, private apiService: ApiService, private router: Router) {}
 
   ngOnInit(): void {
     this.route.params.subscribe((params) => {
@@ -27,5 +24,9 @@ export class ProductDetailComponent implements OnInit {
         }
       );
     });
+  }
+
+  buyProduct() {
+    this.router.navigate(['/order']);
   }
 }

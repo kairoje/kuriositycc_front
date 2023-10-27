@@ -13,7 +13,7 @@ export class LoginComponent implements OnInit {
   loginForm!: FormGroup;
   successMessage: string = '';
 
-  constructor(private fb: FormBuilder, private apiService: ApiService, private router: Router) {}
+  constructor(private fb: FormBuilder, private apiService: ApiService, private router: Router, private http: HttpClient) {}
 
   ngOnInit(): void {
     this.loginForm = this.fb.group({
@@ -39,15 +39,18 @@ export class LoginComponent implements OnInit {
   }
 
   login(userData: any) {
-    this.apiService.loginUser(userData).subscribe((response: any) => {
-      const token = response.token;
-      if(token) {
-        localStorage.setItem('jwt_token', token);
-      }
-    },
-    (error: any) => {
+    const httpOptions = {
+      headers: new HttpHeaders({
+        'Content-Type': 'application/json',
+        'Authorization': 'Bearer ' + localStorage.getItem('jwt_token')
+      })
+    };
 
-    }
-    );
+    this.http.post('/api/auth/login', userData, httpOptions)
+      .subscribe((response: any) => {
+
+      }, (error: any) => {
+
+      });
   }
 }
