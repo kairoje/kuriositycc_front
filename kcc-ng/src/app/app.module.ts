@@ -16,6 +16,7 @@ import { MatCardModule } from '@angular/material/card';
 import { CarouselComponent } from './carousel/carousel.component';
 import { NgbModule, NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
+import { OrderComponent } from './order/order.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
     LoginComponent,
     ShopComponent,
     CarouselComponent,
-    ProductDetailComponent
+    ProductDetailComponent,
+    OrderComponent
   ],
   imports: [
     BrowserModule,

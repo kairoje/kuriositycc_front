@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ApiService } from '../api.service';
 import { Router } from '@angular/router';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 @Component({
   selector: 'app-login',
@@ -35,5 +36,18 @@ export class LoginComponent implements OnInit {
         }
       );
     }
+  }
+
+  login(userData: any) {
+    this.apiService.loginUser(userData).subscribe((response: any) => {
+      const token = response.token;
+      if(token) {
+        localStorage.setItem('jwt_token', token);
+      }
+    },
+    (error: any) => {
+
+    }
+    );
   }
 }
