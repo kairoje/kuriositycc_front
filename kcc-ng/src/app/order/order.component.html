@@ -1,1 +1,76 @@
-<p>order works!</p>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center; /* Center align the entire page */
+    }
+
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        font-size: 24px; /* Increase font size for the header */
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    .order-details, .order-items {
+        text-align: left; /* Align the content within these sections to the left */
+        margin: 0 auto; /* Center these sections horizontally */
+        max-width: 600px; /* Limit the width of the sections for better readability */
+    }
+
+    h2 {
+        font-size: 20px; /* Increase font size for section headings */
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    li {
+        margin: 10px 0;
+        font-size: 18px; /* Increase font size for list items */
+    }
+
+    footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        font-size: 18px; /* Increase font size for the footer */
+    }
+</style>
+
+<header>
+    <h1>Order Confirmation</h1>
+</header>
+
+<main>
+    <section class="order-details">
+        <h2>Order Details</h2>
+        <!-- Display order details here using Angular data binding -->
+        <ul>
+            <li>Order ID: 017</li>
+            <li>Customer Name: Mr.Kurious</li>
+            <li>Shipping Address: 123 Main St</li>
+            <!-- Add more order details as needed -->
+        </ul>
+    </section>
+
+    <section class="order-items">
+        <h2>Ordered Items:</h2>
+        <!-- Display ordered items using Angular ngFor or ngRepeat -->
+        <ul>
+            <li>
+               Kuriosity Emblem Jacket
+            </li>
+        </ul>
+    </section>
+</main>
+
+<footer>
+    <p>Thank you for your order! If you have any questions, please contact our customer support.</p>
+</footer>
+  

@@ -31,5 +31,12 @@ export class ApiService {
     return this.http.get(`${this.apiUrl}/api/products/${productId}`);
   }
   
+  getUserDetails(userId: string) {
+    return this.http.get(`/api/users/${userId}`);
+  }
+
+  getProductDetails(productId: string) {
+    return this.http.get(`/api/products/${productId}`);
+  }
 }
 
