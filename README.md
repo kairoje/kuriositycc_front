@@ -50,7 +50,7 @@ I faced some challenges during the development of this project:
 
 ## Project Planning
 
-Here's how I approached this project:
+**Here's how I approached this project:**
 
 1. Started with the backend development, focusing on implementing Spring Security for user authentication and authorization.
 2. Created the user registration and login features on the backend.
@@ -60,14 +60,13 @@ Here's how I approached this project:
 6. Implemented the order history feature.
 7. Currently in development mode, planning to add more features and enhancements as my skills as an engineer grow.
 
-Acknowledgments
+**Acknowledgments**
 Special thanks to Angular and Angular Material for making this project possible.
 
 Special thanks to our amazing instructors!!
-
-Suresh Sigera: GitHub
-Dhrubo Chowdhury: GitHub
-Leonardo Rodriguez: GitHub
+- Suresh Sigera: GitHub
+- Dhrubo Chowdhury: GitHub
+- Leonardo Rodriguez: GitHub
 
 Back end api:
 https://github.com/kairoje/kuriositycc_back
